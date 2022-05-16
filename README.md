@@ -11,7 +11,22 @@ flask run
 # Run tests
 
 ```
+chmod 557 tests.sh
 ./tests.sh
+```
+
+or you can run unit tests:
+
+```
+cd tests
+python3 test_word_ladder.py
+```
+
+and integration tests
+
+```
+cd tests
+pytest
 ```
 
 # How it works

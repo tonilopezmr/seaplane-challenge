@@ -47,8 +47,7 @@ class WordLadder:
       queue.append((start, 1))
       visited[start] = 1
       path[start] = []
-
-      # While the queue is non-empty
+      
       while (len(queue) > 0):          
           pair = queue.popleft()
 
@@ -72,8 +71,7 @@ class WordLadder:
               if not intermediate in umap: continue
               
               words = umap[intermediate]
-              print(intermediate + " = ", end = " ")
-              print(words)                 
+                            
               for adjacent in words:
                 if not adjacent in visited:
                   visited[adjacent] = 1
@@ -92,14 +90,3 @@ class ShortestPath:
     self.distance = distance
     self.path = path
     pass
-
-if __name__ == '__main__':  
-    dictionary = {}
-    
-    dictionary["ban"] = 1
-    dictionary["pban"] = 1
-    dictionary["n"] = 1
-    dictionary["h"] = 1
-    
-    wordladder = WordLadder()
-    print(wordladder.shortest_path("an", "h", dictionary).__dict__)
