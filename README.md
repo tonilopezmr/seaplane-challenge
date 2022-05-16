@@ -4,8 +4,9 @@ API to get the shortests path between two words that are included in a given dic
 
 # Run 
 
+Activate your venv and install the requirements.txt
+
 ```
-. venv/bin/activate
 pip install -r requirements.txt
 flask run
 ```
