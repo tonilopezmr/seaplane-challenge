@@ -5,6 +5,8 @@ API to get the shortests path between two words that are included in a given dic
 # Run 
 
 ```
+. venv/bin/activate
+pip install -r requirements.txt
 flask run
 ```
 
@@ -31,7 +33,7 @@ pytest
 
 # How it works
 
-You have to open a browser or make a GET Request to `https://localhost:5000` with the next three parameters:
+Once you run `flask run`, you have to open a browser or make a GET Request to `https://localhost:5000` with the next three parameters:
 
 `start` The start word
 `target` The end word 
